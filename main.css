@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+.app{   
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+      
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    opacity: 0.8;
+    width: 90%;
+    
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+body > .app > .container > .apptitle > h1 > img{
+width: 40px;
+height: 40px;    
+}
+body > .app > .container > .apptitle > h1 {
+    margin: 5%;
+    font-size: 4rem;
+    font-family: 'Honk', system-ui;
+}
+body > .app > .container > .ip{
+display: flex;
+justify-content: space-between;
+margin: 10px auto;
+
+}
+body > .app > .container > .ip> input{
+    margin: 0;
+    border-radius: 15px 0px 0px 15px;
+
+    width:100% ;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+body > .app > .container > .ip> button{
+    border-radius: 0px 15px 15px 0px;
+    margin: 0;
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(26, 184, 26);
+    font-size: 14px;
+    cursor: pointer;
+}
+body > .app > .container > .tasklist{
+    margin: 5px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    
+}
+body > .app > .container > .tasklist>ul{
+    
+    list-style: none;
+    width: 70%;
+    }
+body > .app > .container > .tasklist>ul>li{
+    display: flex;
+    padding: 13px 0px;
+    align-items: center;
+    font-weight: bolder;
+    font-family: 'Kalam', cursive;
+font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+body>.app> .container>.tasklist> ul>li::before{
+    left: -30%;
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+body>.app> .container>.tasklist> ul>li.checked::before{
+    content: '';
+    position: absolute;
+    left: -30%;
+
+    height: 30px;
+    width: 30px;
+    background-image: url(checked.png);
+    background-size: cover;
+    background-position: center;
+}
+body>.app> .container>.tasklist> ul>li>span{
+    right: -20%;
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(delete.png);
+    background-size: cover;
+    background-position: center;
+}
+

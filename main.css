@@ -58,6 +58,7 @@ body > .app > .container > .ip> input{
     flex: 1;
 }
 body > .app > .container > .ip> button{
+    font-weight:bold;
     border-radius: 0px 15px 15px 0px;
     margin: 0;
     padding: 10px 25px;
